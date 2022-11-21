@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :weather do
-        post :send_tweet, on: :collection
+        post :send_forecast_weather, on: :collection
       end
     end
   end
