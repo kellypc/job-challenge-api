@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "get weather route to Aracaju", :type => :request do
   context 'When the params exist' do
-    ENV["API_KEY"] = "dd3e1ec30db7ce17ff47278bc8c92a36"
+    ENV["API_KEY"] = "26756240572498284"
 
     before { post '/api/v1/weather/send_forecast_weather', params: {"city":"Aracaju"} }  
 

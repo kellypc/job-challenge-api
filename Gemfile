@@ -48,3 +48,7 @@ group :development do
 end
 
 gem 'simplecov', require: false, group: :test
+
+gem 'twitter'
+
+gem 'openweathermap', '~> 0.2.3'
