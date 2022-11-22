@@ -1,24 +1,65 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Caiena Challenger Api
 
-Things you may want to cover:
+Desafio:
+Este é um desafio proposto pela empresa Caiena.
+Nesse projeto iremos fazer uma api para criação de tweets, onde será informada a previsão de tempo para uma cidade que o usuário solicitar. Além de fornecermos a previsão para os próximos cinco dias.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+O desafio é um projeto desenvolvido em ruby on rails e conta o auxílio de algumas gems:
+- OpenWeatherMap
+- Twitter
+- Rspec
+- Simplecov
+- Rubocop - a ser implementado
+- Docker - a ser implementado
+- Dotenv-rails
 
-* Database creation
+## Instalação
 
-* Database initialization
+Obs: Para esse projeto utilizei o sistema operacional MacOS Monterey.
+Usei o editor de texto code.
+Estamos usando a versão do Ruby 2.7.2 e rails 6.1.7. Essas versões foram usadas por terem compatibilidade com a gem do twitter.
+1. Clone o projeto.
 
-* How to run the test suite
+   ```sh
+   $ git@github.com:kellypc/job-challenge-api.git
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. Para instalar as gems:
+   
+   ```sh
+   bundle install
+   ```
 
-* Deployment instructions
+3. Essa api conta com testes com o rspec, para rodá-los rode no terminal.
 
-* ...
+   ```sh
+   $ bundle exec rspec
+   ```
+
+## Documentacão
+
+### Criar um tweet
+
+##### Request
+
+```sh
+POST  /api/v1/weather/send_forecast_weather
+```
+
+```sh
+Parameters:
+{
+    "city": "Goiania"
+}
+```
+
+##### Response
+
+```sh
+"23°C e nuvens quebradas em Goiânia"
+```
+
