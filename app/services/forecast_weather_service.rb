@@ -27,5 +27,14 @@ class ForecastWeatherService
     response = http.request(request)
 
     content = JSON.parse(response.body)
+
+    filter_response(content)
+  end
+
+  def filter_response(content)
+    weather_condition = content['weather'][0]['description']
+    temperature = content['main']['temp']
+    city = content['name']
+    message = "#{temperature.ceil}°C e #{weather_condition} em #{city}"
   end
 end
