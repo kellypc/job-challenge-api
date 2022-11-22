@@ -13,5 +13,19 @@ describe "get weather route to Aracaju", :type => :request do
     it 'returns status code 200' do
       expect(response).to have_http_status(:success)
     end
+
+    it 'returns a twitter response' do
+      expect(response)
+    end
+  end
+
+  context 'When communicate with Twitter' do
+    context 'tweet a message' do
+      let(:tweet_message) { 'Tweet a message test'}
+      
+      it 'returns a twitter response' do
+        expect(response).to eq(tweet_message)
+      end
+    end
   end
 end
