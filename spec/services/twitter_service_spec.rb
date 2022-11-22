@@ -8,7 +8,7 @@ RSpec.describe TwitterService do
     it 'tweet a message' do
       tweet = TwitterService.send_tweet(tweet_message)
       
-      expect(tweet).to eq("Twitter::Tweet id=1595087860503543808")
+      expect(tweet).to be_an_instance_of(Twitter::Tweet)
     end
   end
 end

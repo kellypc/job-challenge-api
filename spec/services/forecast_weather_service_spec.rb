@@ -9,7 +9,7 @@ RSpec.describe ForecastWeatherService do
 
       weather_city = ForecastWeatherService.new(host, city, key).call
       
-      expect(weather_city).to eq("28°C e nuvens quebradas em Santos")
+      expect(weather_city).to eq("28°C e chuva fraca em Santos em 22/11")
     end
   end
 end
