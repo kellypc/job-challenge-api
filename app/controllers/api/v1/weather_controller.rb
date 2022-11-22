@@ -8,6 +8,6 @@ class Api::V1::WeatherController < ApplicationController
 
     tweet = TwitterService.send_tweet(weather_city)
 
-    render json: tweet
+    render json: tweet['text']
   end    
 end

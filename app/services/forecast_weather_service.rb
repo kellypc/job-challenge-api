@@ -35,6 +35,7 @@ class ForecastWeatherService
     weather_condition = content['weather'][0]['description']
     temperature = content['main']['temp']
     city = content['name']
-    message = "#{temperature.ceil}°C e #{weather_condition} em #{city}"
+    date = content['dt']
+    "#{temperature.ceil}°C e #{weather_condition} em #{city} em #{Time.at(date).strftime("%d/%m")} "
   end
 end
