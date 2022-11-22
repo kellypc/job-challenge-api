@@ -9,18 +9,13 @@ Nesse projeto iremos fazer uma api para criação de tweets, onde será informad
 
 
 O desafio é um projeto desenvolvido em ruby on rails e conta o auxílio de algumas gems:
-open_weather_map
-twitter
-Rspec
-Simplecov
-Rubocop - a ser implementado
-Docker - a ser implementado
-Dotenv-rails
-
-## Tabela de Conteúdo
-
-- [Instalação](#instalacao)
-- [Documentação da API](#documentacao)
+- OpenWeatherMap
+- Twitter
+- Rspec
+- Simplecov
+- Rubocop - a ser implementado
+- Docker - a ser implementado
+- Dotenv-rails
 
 ## Instalação
 
@@ -47,7 +42,7 @@ Estamos usando a versão do Ruby 2.7.2 e rails 6.1.7. Essas versões foram usada
 
 ## Documentacão
 
-### Criar Criar um tweet
+### Criar um tweet
 
 ##### Request
 
